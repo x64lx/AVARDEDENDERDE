@@ -1,0 +1,11 @@
+{
+  "global": {
+    "comment": "dont kill me voxlis  pls pls dont kill me voxlis pls pls dont kill me voxlis pls pls",
+    "changelogs": " [ + ] Updated",
+    "inservice": ["windows"]
+  },
+  "windows": {
+    "product": "LX63",
+    "exploitversion": "1.20",
+    "robloxversion": "version-78712d8739f34cb9"
+}
