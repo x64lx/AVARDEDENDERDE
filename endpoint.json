@@ -5,7 +5,7 @@
   },
   "windows": {
     "product": "LX63",
-    "exploit_version": "1.0",
+    "exploit_version": "v2.2.0-espresso-beta+03",
     "roblox_version": "version-df7528517c6849f7"
   }
 }
