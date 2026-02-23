@@ -1,11 +1,11 @@
 {
   "global": {
-    "changelogs": " [ + ] REWROTE",
+    "changelogs": "[+]",
     "inservice": ["windows"]
   },
   "windows": {
     "product": "LX63",
-    "exploit_version": "v2.2.0-espresso-beta+03",
+    "exploit_version": "v2.2.0-espresso-stable+04",
     "roblox_version": "version-df7528517c6849f7"
   }
 }
