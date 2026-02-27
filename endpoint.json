@@ -1,11 +1,11 @@
 {
   "global": {
-    "changelogs": "[+]",
+    "changelogs": "[+ Join Discord for Changelogs! https://discord.gg/x9f5ErzpeU]",
     "inservice": ["windows"]
   },
   "windows": {
     "product": "LX63",
-    "exploit_version": "v2.2.0-espresso-stable+04",
-    "roblox_version": "version-df7528517c6849f7"
+    "exploit_version": "v2.2.0-espresso-b+05",
+    "roblox_version": "version-760d064d05424689"
   }
 }
