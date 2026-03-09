@@ -85,7 +85,47 @@
           "@type": "Answer",
           "text": "Join our Discord server for support and updates."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Does LX63 require a key system?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, LX63 is completely keyless. Just download, open, and start executing scripts right away."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does LX63 work on Windows 10?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, LX63 fully supports both Windows 10 and Windows 11 with no issues."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often is LX63 updated?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "LX63 is updated regularly after every Roblox update to ensure compatibility and stability."
+        }
       }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Use LX63 Roblox Executor",
+    "description": "Step-by-step guide to download and use LX63, the free keyless Roblox executor.",
+    "step": [
+      {"@type": "HowToStep", "position": 1, "name": "Download LX63", "text": "Click the Download Now button on lx63.xyz and wait for the download to complete."},
+      {"@type": "HowToStep", "position": 2, "name": "Run LX63", "text": "Extract the ZIP and run LX63.exe. No installation needed."},
+      {"@type": "HowToStep", "position": 3, "name": "Open Roblox", "text": "Launch Roblox and join any game you want to execute scripts in."},
+      {"@type": "HowToStep", "position": 4, "name": "Inject", "text": "Click the Inject button in LX63 and wait for the confirmation message."},
+      {"@type": "HowToStep", "position": 5, "name": "Execute Your Script", "text": "Paste your script into the editor and press Execute."}
     ]
   }
   </script>
@@ -183,6 +223,9 @@
       .f4g5h6 {
         padding: 0;
       }
+      .how-to-steps {
+        grid-template-columns: 1fr !important;
+      }
     }
     .f4g5h6 {
       width: 100%;
@@ -229,9 +272,7 @@
       transition: all 0.6s cubic-bezier(0.6, 0.05, 0.3, 1);
       z-index: 0;
     }
-    .j1k2l3:hover::before {
-      opacity: 1;
-    }
+    .j1k2l3:hover::before { opacity: 1; }
     .j1k2l3:hover {
       transition: all 0.6s cubic-bezier(0.6, 0.05, 0.3, 1);
       transform: scale(1.03);
@@ -283,6 +324,82 @@
       background: linear-gradient(145deg, #0073e6, #005bb5);
       box-shadow: 0 0 10px rgba(0, 115, 230, 0.4);
     }
+
+    /* ── HOW TO USE ── */
+    .how-to-section {
+      margin-top: 40px;
+    }
+    .how-to-section h2 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .how-to-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+    }
+    .how-to-step {
+      background: var(--feature-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.6s cubic-bezier(0.6, 0.05, 0.3, 1);
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    .how-to-step.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .how-to-step::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--feature-hover);
+      opacity: 0;
+      transition: all 0.6s cubic-bezier(0.6, 0.05, 0.3, 1);
+      z-index: 0;
+    }
+    .how-to-step:hover::before { opacity: 1; }
+    .how-to-step:hover {
+      transform: scale(1.03);
+      border-radius: 5px;
+    }
+    .how-to-step > * { position: relative; z-index: 1; }
+    .step-number {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: linear-gradient(145deg, #ff7f50, #ff6347);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 14px;
+      color: white;
+      flex-shrink: 0;
+    }
+    .how-to-step h4 {
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .how-to-step p {
+      font-size: 13px;
+      color: var(--promo-color);
+      line-height: 1.5;
+    }
+    .how-to-step:hover p { color: #ffc4a3; }
+
+    /* ── FAQ ── */
     .m7n8o9 {
       margin-top: 40px;
     }
@@ -338,6 +455,9 @@
       background: var(--faq-bg);
       transition: all 0.6s cubic-bezier(0.6, 0.05, 0.3, 1);
       padding: 0 16px;
+      font-size: 14px;
+      color: var(--promo-color);
+      line-height: 1.6;
     }
     .m4n5o6 h2 {
       font-size: 18px;
@@ -577,6 +697,40 @@
           <a href="" target="_blank" rel="noopener noreferrer" class="z1y2x3 g1h2i3"><i class="fas fa-file-alt"></i> Docs</a>
           <a href="https://r.sunc.su/8noVIGBYTS" target="_blank" rel="noopener noreferrer" class="z1y2x3 j4k5l6"><i class="fas fa-shield-virus"></i> sUNC</a>
         </div>
+
+        
+        <div class="how-to-section">
+          <h2><i class="fas fa-list-ol"></i> How To Use</h2>
+          <div class="how-to-steps">
+            <div class="how-to-step">
+              <div class="step-number">1</div>
+              <h4>Download LX63</h4>
+              <p>Click the "Download Now" button and wait for the download to complete.</p>
+            </div>
+            <div class="how-to-step">
+              <div class="step-number">2</div>
+              <h4>Run LX63</h4>
+              <p>Extract the ZIP and run LX63.exe. No installation needed.</p>
+            </div>
+            <div class="how-to-step">
+              <div class="step-number">3</div>
+              <h4>Open Roblox</h4>
+              <p>Launch Roblox and join any game you want to execute scripts in.</p>
+            </div>
+            <div class="how-to-step">
+              <div class="step-number">4</div>
+              <h4>Inject</h4>
+              <p>Click the Inject button in LX63 and wait for the confirmation message.</p>
+            </div>
+            <div class="how-to-step">
+              <div class="step-number">5</div>
+              <h4>Execute Your Script</h4>
+              <p>Paste your script into the editor and press Execute. That's it!</p>
+            </div>
+          </div>
+        </div>
+
+        
         <div class="m7n8o9" id="faq">
           <h2><i class="fas fa-question-circle"></i> FAQ</h2>
           <div class="p1q2r3">
@@ -585,11 +739,23 @@
           </div>
           <div class="p1q2r3">
             <div class="o1p2q3">Is LX63 safe to use?<i class="fas fa-chevron-down"></i></div>
-            <div class="q4r5s6">Yes, LX63 is Safe. Install it from official places, If you have any questions feel free to ask it in our discord server.</div>
+            <div class="q4r5s6">Yes, LX63 is Safe. Install it from official places. If you have any questions feel free to ask in our Discord server.</div>
+          </div>
+          <div class="p1q2r3">
+            <div class="o1p2q3">Does LX63 require a key system?<i class="fas fa-chevron-down"></i></div>
+            <div class="q4r5s6">No, LX63 is completely keyless. Just download, open, and start executing scripts right away — no waiting, no ads, no keys.</div>
+          </div>
+          <div class="p1q2r3">
+            <div class="o1p2q3">Does LX63 work on Windows 10?<i class="fas fa-chevron-down"></i></div>
+            <div class="q4r5s6">Yes! LX63 fully supports both Windows 10 and Windows 11 with no issues whatsoever.</div>
+          </div>
+          <div class="p1q2r3">
+            <div class="o1p2q3">How often is LX63 updated?<i class="fas fa-chevron-down"></i></div>
+            <div class="q4r5s6">LX63 is updated regularly after every Roblox patch to ensure full compatibility and maximum stability.</div>
           </div>
           <div class="p1q2r3">
             <div class="o1p2q3">How do I get support?<i class="fas fa-chevron-down"></i></div>
-            <div class="q4r5s6">Join our Discord server for support and updates.</div>
+            <div class="q4r5s6">Join our Discord server for support, updates, and the latest news about LX63.</div>
           </div>
         </div>
       </div>
@@ -605,11 +771,43 @@
         </div>
         <div class="t1u2v3">
           <strong>Why LX63?</strong><br>
-          LX63 is giving you the best experience for a roblox executor, It  Can Run Any script You want. 100%sUNC  and No Key System. Get LX63 Now!
+          LX63 is giving you the best experience for a roblox executor, It Can Run Any script You want. 100%sUNC and No Key System. Get LX63 Now!
         </div>
       </div>
     </div>
   </div>
+
+  
+  <section style="max-width:1200px;width:100%;margin:30px auto;padding:0 20px 40px;color:var(--promo-color);font-size:14px;line-height:1.8;">
+    <h2 style="color:var(--text);font-size:20px;font-weight:800;margin-bottom:12px;">What is LX63?</h2>
+    <p>
+      <strong>LX63</strong> is a free, high-performance <strong>Roblox executor</strong> for Windows 10 and Windows 11.
+      It is designed to run any Lua script you throw at it, thanks to its <strong>100% sUNC</strong> compliance.
+      Unlike other executors, LX63 requires <strong>no key system</strong> — just download, inject, and execute. No ads, no waiting, no hassle.
+    </p>
+    <h2 style="color:var(--text);font-size:20px;font-weight:800;margin:24px 0 12px;">Why LX63 is the Best Free Roblox Executor in 2025</h2>
+    <p>
+      The Roblox executor market is full of tools that crash, require annoying key systems, or simply stop working after a Roblox update.
+      <strong>LX63</strong> was built to solve all of these problems. It features a stable injection engine, full <strong>sUNC support</strong>,
+      and is updated quickly after every Roblox patch so you are never left waiting. Whether you want to run popular scripts like
+      Infinite Yield, Dex Explorer, or custom scripts you wrote yourself — LX63 handles everything without breaking a sweat.
+    </p>
+    <h2 style="color:var(--text);font-size:20px;font-weight:800;margin:24px 0 12px;">LX63 Features</h2>
+    <p>
+      LX63 comes packed with everything a Roblox scripter needs. It includes a built-in <strong>script editor</strong>,
+      a <strong>decompiler</strong>, full <strong>WebSocket support</strong>, and a clean, lightweight UI that does not slow down your game.
+      The executor runs smoothly on both <strong>Windows 10 and Windows 11</strong> with no compatibility issues.
+      Performance is a top priority — LX63 injects fast and stays stable throughout your entire session with no crashes.
+    </p>
+    <h2 style="color:var(--text);font-size:20px;font-weight:800;margin:24px 0 12px;">Download LX63 — Free Roblox Executor</h2>
+    <p>
+      Getting started with <strong>LX63 download</strong> is simple. Click the Download Now button at the top of this page,
+      extract the ZIP file, and run LX63.exe. No installation wizard, no setup, no key. Open Roblox, join a game,
+      hit Inject in LX63, paste your script, and press Execute. It is that easy.
+      LX63 is and will always remain <strong>completely free</strong>.
+    </p>
+  </section>
+
   <script>
     document.querySelectorAll('.o1p2q3').forEach(el => {
       el.addEventListener('click', () => {
@@ -620,15 +818,13 @@
       entries.forEach(entry => {
         entry.target.classList.toggle('visible', entry.isIntersecting);
       });
-    }, {
-      threshold: 0.1
-    });
-    document.querySelectorAll('.s7t8u9').forEach(item => a1b2c3Observer.observe(item));
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.s7t8u9, .how-to-step').forEach(item => a1b2c3Observer.observe(item));
     document.addEventListener('selectstart', (e) => e.preventDefault());
     document.addEventListener('contextmenu', (e) => e.preventDefault());
     document.addEventListener('keydown', (e) => {
       if (
-        e.ctrlKey && 
+        e.ctrlKey &&
         (e.key === 'u' || e.key === 'U' || e.key === 's' || e.key === 'S' || e.key === 'p' || e.key === 'P') ||
         e.key === 'F12' ||
         (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.key === 'C' || e.key === 'c' || e.key === 'J' || e.key === 'j'))
@@ -666,9 +862,7 @@
       v1w2x3.style.left = `${e.pageX}px`;
       v1w2x3.style.top = `${e.pageY}px`;
       v1w2x3.style.display = 'block';
-      setTimeout(() => {
-        v1w2x3.classList.add('show');
-      }, 10);
+      setTimeout(() => { v1w2x3.classList.add('show'); }, 10);
     }
     document.addEventListener('click', () => {
       if (v1w2x3.classList.contains('show')) {
@@ -680,9 +874,7 @@
         }, 300);
       }
     });
-    document.getElementById('refresh').addEventListener('click', () => {
-      location.reload();
-    });
+    document.getElementById('refresh').addEventListener('click', () => { location.reload(); });
     document.getElementById('join-discord').addEventListener('click', () => {
       window.open('https://discord.gg/Nw5E8AptYW', '_blank');
     });
@@ -705,9 +897,7 @@
         </div>
       `;
       document.body.appendChild(overlay);
-      setTimeout(() => {
-        overlay.classList.add('show');
-      }, 10);
+      setTimeout(() => { overlay.classList.add('show'); }, 10);
       const progressBar = overlay.querySelector('.e4f5g6');
       let progress = 0;
       const interval = setInterval(() => {
@@ -719,17 +909,13 @@
           window.open('https://work.ink/1XBc/lx63', '_blank');
           setTimeout(() => {
             overlay.classList.remove('show');
-            setTimeout(() => {
-              overlay.remove();
-            }, 300);
+            setTimeout(() => { overlay.remove(); }, 300);
           }, 2000);
         }
       }, 300);
     });
     document.querySelectorAll('img').forEach(img => {
-      if (!img.alt) {
-        img.alt = 'Image description';
-      }
+      if (!img.alt) img.alt = 'Image description';
     });
   </script>
   <script src="https://cdn.work.ink/js/redirect.js?id=1526" data-url="https://work.ink/direct/1526" data-max="2" defer></script>
